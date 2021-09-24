@@ -6,7 +6,7 @@ Efectos basicos para componentes Swing, cuenta con 2 clases estaticas:
   - cuenta con 6 metodos, 3 para aparición y 3 para desaparición, cada uno con un distintos parametros segun sea necesario.
   - se necesita que la ventana tenga desactivado el atributo de decoración (JFrame, Frame, JDialog, Dialog) por lo que es mas recomendable utilizarlo en un JWindow.
 - Move
-  - Fade permite mover todo tipo de componentes, pero esta limitado a que los componentes se encuentren colocados en contenedores sin layouts.
+  - Move permite mover todo tipo de componentes, pero esta limitado a que los componentes se encuentren colocados en contenedores sin layouts.
   - cuenta con metodos Up, Down, Left, Right, el cual pedira una el componente a mover, una posicion inicial, posicion final, velocidad del movimiento y el retardo.
   - cuenta con un metodo experimental para sacudir el componente (OJO: Utiliza hilos para realizar el movimiento de sacudida todos los demas metodos antes mencionados 
     utilizan la implementacion del Timer por lo que la GUI no se congelara al contrario de este metodo.
@@ -15,7 +15,7 @@ Efectos basicos para componentes Swing, cuenta con 2 clases estaticas:
   
  ### Demo disponible
  
- Dentro de la libreria incluyo el codigo de la demo que muestro en este [video](https://www.youtube.com/watch?v=nzsKpaFOKaM)
+ Dentro de la libreria incluyo el codigo de la demo que muestro en este [video.](https://www.youtube.com/watch?v=nzsKpaFOKaM)
  
  ### Repositorio en Maven
  
