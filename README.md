@@ -2,16 +2,16 @@
 
 Efectos basicos para componentes Swing, cuenta con 2 clases estaticas:
 - Fade
-  - Fade permite que un componente de tipo ventana haga un efecto de aparición y desaparición
-  - cuenta con 6 metodos, 3 para aparición y 3 para desaparición, cada uno con un distintos parametros segun sea necesario
-  - se necesita que la ventana tenga desactivado el atributo de decoración (JFrame, Frame, JDialog, Dialog) por lo que es mas recomendable utilizarlo en un JWindow
+  - Fade permite que un componente de tipo ventana haga un efecto de aparición y desaparición.
+  - cuenta con 6 metodos, 3 para aparición y 3 para desaparición, cada uno con un distintos parametros segun sea necesario.
+  - se necesita que la ventana tenga desactivado el atributo de decoración (JFrame, Frame, JDialog, Dialog) por lo que es mas recomendable utilizarlo en un JWindow.
 - Move
-  - Fade permite mover todo tipo de componentes, pero esta limitado a que los componentes se encuentren colocados en contenedores sin layouts
-  - cuenta con metodos Up, Down, Left, Right, el cual pedira una el componente a mover, una posicion inicial, posicion final, velocidad del movimiento y el retardo
+  - Fade permite mover todo tipo de componentes, pero esta limitado a que los componentes se encuentren colocados en contenedores sin layouts.
+  - cuenta con metodos Up, Down, Left, Right, el cual pedira una el componente a mover, una posicion inicial, posicion final, velocidad del movimiento y el retardo.
   - cuenta con un metodo experimental para sacudir el componente (OJO: Utiliza hilos para realizar el movimiento de sacudida todos los demas metodos antes mencionados 
     utilizan la implementacion del Timer por lo que la GUI no se congelara al contrario de este metodo.
-    OJO2: Solo lo he probado en componentes de tipo ventana no se como sea su funcionamiento en componentes normales)
-  - cuenta con un ejemplo del funcionamiento base de los movimientos, me tome la tarea de abstraer lo basico de los movimientos para no repetir codigo innesesariamente
+    OJO2: Solo lo he probado en componentes de tipo ventana no se como sea su funcionamiento en componentes normales).
+  - cuenta con un ejemplo del funcionamiento base de los movimientos, me tome la tarea de abstraer lo basico de los movimientos para no repetir codigo innesesariamente.
   
  ### Demo disponible
  
@@ -32,5 +32,6 @@ Efectos basicos para componentes Swing, cuenta con 2 clases estaticas:
 </dependency>
 ```
 ### Archivo Jar
-Si no estas ocupando la tecnologia de maven aqui esta el [link](https://search.maven.org/remotecontent?filepath=io/github/kokecena/JovisAnimation/1.0.3/JovisAnimation-1.0.3.jar) directo al jar del proyecto, aun que en lo personal si recomendaria usar Maven te evitas estar como loco buscando librerias viejas (?) solo lo dejo como sugerencia
+Si no estas ocupando la tecnologia de maven aqui esta el [link](https://search.maven.org/remotecontent?filepath=io/github/kokecena/JovisAnimation/1.0.3/JovisAnimation-1.0.3.jar) directo al jar del proyecto, aun que en lo personal si recomendaria usar Maven te evitas estar como loco buscando librerias viejas (?) solo lo dejo como sugerencia.
+
 Eso es todo :+1:, espero lo disfruten :shipit: *-c va-*
