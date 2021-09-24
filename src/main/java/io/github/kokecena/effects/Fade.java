@@ -32,7 +32,7 @@ public class Fade {
      * Animacion de aparicion de la ventana
      * <br>por defecto tiene un retardo de 5
      *
-     * @param w
+     * @param w ventana
      */
     public static void fadeIn(Window w) {
         new FadeAnimation(true, w).initFade();
@@ -42,7 +42,7 @@ public class Fade {
      * Animacion de desaparicion de la ventana
      * <br>por defecto tiene un retardo de 5
      *
-     * @param w
+     * @param w ventana
      */
     public static void fadeOut(Window w) {
         new FadeAnimation(false, w).initFade();
@@ -53,8 +53,8 @@ public class Fade {
      * <br> Se le pasa un argumento indicando el retardo
      * de aparicion de la ventana
      *
-     * @param w
-     * @param delay
+     * @param w ventana
+     * @param delay retardo
      */
     public static void fadeIn(Window w, int delay) {
         new FadeAnimation(true, delay, w).initFade();
@@ -65,8 +65,8 @@ public class Fade {
      * <br> Se le pasa un argumento indicando el retardo
      * de desaparicion de la ventana
      *
-     * @param w
-     * @param delay
+     * @param w ventana
+     * @param delay retardo
      */
     public static void fadeOut(Window w, int delay) {
         new FadeAnimation(false, delay, w).initFade();
@@ -79,8 +79,9 @@ public class Fade {
      * <br> Se le pasa un argumento indicando la velocidad
      * con la que la opacidad incrementara
      *
-     * @param w
-     * @param delay
+     * @param w ventana
+     * @param delay retardo
+     * @param opacityTick velocidad de opacidad
      */
     public static void fadeIn(Window w, int delay, float opacityTick) {
         new FadeAnimation(true, delay, opacityTick, w).initFade();
@@ -93,8 +94,9 @@ public class Fade {
      * <br> Se le pasa un argumento indicando la velocidad
      * con la que la opacidad decrementara
      *
-     * @param w
-     * @param delay
+     * @param w ventana
+     * @param delay retardo
+     * @param opacityTick velocidad de opacidad
      */
     public static void fadeOut(Window w, int delay, float opacityTick) {
         new FadeAnimation(false, delay, opacityTick, w).initFade();
@@ -102,16 +104,16 @@ public class Fade {
 
     public static class FadeAnimation {
 
-        private boolean fadeIn;
-        private Window w;
-        private float opacityTick;
-        private float opacityStart;
-        private Timer animation;
+        private final boolean fadeIn;
+        private final Window w;
+        private final float opacityTick;
+        private final float opacityStart;
+        private final Timer animation;
 
         /**
          * Constructor principal de la animacion de aparicion
          *
-         * @param fadeIn
+         * @param fadeIn      si es efecto de entrada
          * @param delay       retardo
          * @param opacityTick velocidad
          * @param w           ventana
@@ -160,7 +162,7 @@ public class Fade {
         /**
          * Detiene la animacion de aparición si se cumple la condicion
          *
-         * @param currentOpacity
+         * @param currentOpacity opacidad actual
          */
         private void stopAnimation(float currentOpacity) {
             if (!nearToEnd(currentOpacity)) {
@@ -193,7 +195,7 @@ public class Fade {
          * <br>Frame o Dialog
          * <br>Para comprobar si tiene la decoracion desactivada
          *
-         * @param w
+         * @param w ventana
          */
         private void undecoratedException(final Window w) {
             final String message = "Undecorated window is required";
@@ -213,7 +215,7 @@ public class Fade {
          * Comprueba que la opacidad este dentro del rango de
          * <br> [0.1f ... 0.9f]
          *
-         * @param opacityTick
+         * @param opacityTick velocidad de opacidad
          */
         private void illegalOpacityTick(float opacityTick) {
             if (opacityTick <= 0 || opacityTick >= 1) {

@@ -40,7 +40,7 @@ public class Move {
      * </p>
      * <br>Location X = 100, Y = 100
      * Y agregamos como posicion inicial 100
-     * <br>Location X = 100, Y = 100 + 100 -> Y = 200
+     * <br>Location X = 100, Y = 100 + 100 , Y = 200
      * <p>
      * Ahora nuestro componente no se encuentra en el punto Y = 100 se encuentra
      * en el punto Y = 200, quiere decir que esta 100 pixeles mas abajo de su
@@ -88,7 +88,7 @@ public class Move {
      * </p>
      * <br>Location X = 100, Y = 100
      * Y agregamos como posicion inicial 100
-     * <br>Location X = 100, Y = 100 - 100 -> Y = 0
+     * <br>Location X = 100, Y = 100 - 100 , Y = 0
      * <p>
      * Ahora nuestro componente no se encuentra en el punto Y = 100 se encuentra
      * en el punto Y = 0, quiere decir que esta 100 pixeles mas arriba de su
@@ -136,7 +136,7 @@ public class Move {
      * </p>
      * <br>Location X = 100, Y = 100
      * Y agregamos como posicion inicial 100
-     * <br>Location X = 100 - 100 -> X = 0, Y = 100
+     * <br>Location X = 100 - 100 , X = 0, Y = 100
      * <p>
      * Ahora nuestro componente no se encuentra en el punto X = 200 se encuentra
      * en el punto X = 0, quiere decir que esta 100 pixeles mas a su izquierda
@@ -184,7 +184,7 @@ public class Move {
      * </p>
      * <br>Location X = 100, Y = 100
      * Y agregamos como posicion inicial 100
-     * <br>Location X = 100 + 100 -> X = 200, Y = 100
+     * <br>Location X = 100 + 100 , X = 200, Y = 100
      * <p>
      * Ahora nuestro componente no se encuentra en el punto X = 100 se encuentra
      * en el punto X = 200, quiere decir que esta 100 pixeles mas a su derecha
