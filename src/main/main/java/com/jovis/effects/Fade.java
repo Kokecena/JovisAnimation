@@ -24,10 +24,81 @@ import java.awt.event.ActionListener;
 import javax.swing.Timer;
 
 /**
- *
  * @author Jovanni Narciso Sanchez Hernandez
  */
 public class Fade {
+
+    /**
+     * Animacion de aparicion de la ventana
+     * <br>por defecto tiene un retardo de 5
+     *
+     * @param w
+     */
+    public static void fadeIn(Window w) {
+        new FadeAnimation(true, w).initFade();
+    }
+
+    /**
+     * Animacion de desaparicion de la ventana
+     * <br>por defecto tiene un retardo de 5
+     *
+     * @param w
+     */
+    public static void fadeOut(Window w) {
+        new FadeAnimation(false, w).initFade();
+    }
+
+    /**
+     * Animacion de aparicion de la ventana
+     * <br> Se le pasa un argumento indicando el retardo
+     * de aparicion de la ventana
+     *
+     * @param w
+     * @param delay
+     */
+    public static void fadeIn(Window w, int delay) {
+        new FadeAnimation(true, delay, w).initFade();
+    }
+
+    /**
+     * Animacion de desaparicion de la ventana
+     * <br> Se le pasa un argumento indicando el retardo
+     * de desaparicion de la ventana
+     *
+     * @param w
+     * @param delay
+     */
+    public static void fadeOut(Window w, int delay) {
+        new FadeAnimation(false, delay, w).initFade();
+    }
+
+    /**
+     * Animacion de aparicion de la ventana
+     * <br> Se le pasa un argumento indicando el retardo
+     * de desaparicion de la ventana
+     * <br> Se le pasa un argumento indicando la velocidad
+     * con la que la opacidad incrementara
+     *
+     * @param w
+     * @param delay
+     */
+    public static void fadeIn(Window w, int delay, float opacityTick) {
+        new FadeAnimation(true, delay, opacityTick, w).initFade();
+    }
+
+    /**
+     * Animacion de desaparicion de la ventana
+     * <br> Se le pasa un argumento indicando el retardo
+     * de desaparicion de la ventana
+     * <br> Se le pasa un argumento indicando la velocidad
+     * con la que la opacidad decrementara
+     *
+     * @param w
+     * @param delay
+     */
+    public static void fadeOut(Window w, int delay, float opacityTick) {
+        new FadeAnimation(false, delay, opacityTick, w).initFade();
+    }
 
     public static class FadeAnimation {
 
@@ -40,11 +111,10 @@ public class Fade {
         /**
          * Constructor principal de la animacion de aparicion
          *
-         *
          * @param fadeIn
-         * @param delay retardo
+         * @param delay       retardo
          * @param opacityTick velocidad
-         * @param w ventana
+         * @param w           ventana
          */
         public FadeAnimation(boolean fadeIn, int delay, float opacityTick, Window w) {
             undecoratedException(w);
@@ -151,77 +221,5 @@ public class Fade {
             }
         }
 
-    }
-
-    /**
-     * Animacion de aparicion de la ventana
-     * <br>por defecto tiene un retardo de 5
-     *
-     * @param w
-     */
-    public static void fadeIn(Window w) {
-        new FadeAnimation(true, w).initFade();
-    }
-
-    /**
-     * Animacion de desaparicion de la ventana
-     * <br>por defecto tiene un retardo de 5
-     *
-     * @param w
-     */
-    public static void fadeOut(Window w) {
-        new FadeAnimation(false, w).initFade();
-    }
-
-    /**
-     * Animacion de aparicion de la ventana
-     * <br> Se le pasa un argumento indicando el retardo
-     * de aparicion de la ventana
-     *
-     * @param w
-     * @param delay
-     */
-    public static void fadeIn(Window w, int delay) {
-        new FadeAnimation(true, delay, w).initFade();
-    }
-
-    /**
-     * Animacion de desaparicion de la ventana
-     * <br> Se le pasa un argumento indicando el retardo
-     * de desaparicion de la ventana
-     *
-     * @param w
-     * @param delay
-     */
-    public static void fadeOut(Window w, int delay) {
-        new FadeAnimation(false, delay, w).initFade();
-    }
-
-    /**
-     * Animacion de aparicion de la ventana
-     * <br> Se le pasa un argumento indicando el retardo
-     * de desaparicion de la ventana
-     * <br> Se le pasa un argumento indicando la velocidad
-     * con la que la opacidad incrementara
-     *
-     * @param w
-     * @param delay
-     */
-    public static void fadeIn(Window w, int delay, float opacityTick) {
-        new FadeAnimation(true, delay, opacityTick, w).initFade();
-    }
-
-    /**
-     * Animacion de desaparicion de la ventana
-     * <br> Se le pasa un argumento indicando el retardo
-     * de desaparicion de la ventana
-     * <br> Se le pasa un argumento indicando la velocidad
-     * con la que la opacidad decrementara
-     *
-     * @param w
-     * @param delay
-     */
-    public static void fadeOut(Window w, int delay, float opacityTick) {
-        new FadeAnimation(false, delay, opacityTick, w).initFade();
     }
 }

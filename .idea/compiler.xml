@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JovisAnimation" target="1.8" />
+      <module name="JovisAnimation (1)" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
