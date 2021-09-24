@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-package com.jovis.effects;
-
-import com.jovis.effects.Move.Movement.Direction;
+package io.github.kokecena.effects;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;
@@ -28,7 +26,7 @@ import javax.swing.Timer;
  */
 public class Move {
 
-    private static void initAnimation(Direction move, Component c, int startPosition, int endPosition, int ticks, int delay) {
+    private static void initAnimation(Movement.Direction move, Component c, int startPosition, int endPosition, int ticks, int delay) {
         Timer animation = new Timer(delay, null);
         animation.setRepeats(true);
         animation.addActionListener(new Movement(move, c, startPosition, endPosition, ticks, animation));
@@ -80,7 +78,7 @@ public class Move {
      * @param delay         Retardo
      */
     public static void Up(Component c, int startPosition, int endPosition, int ticks, int delay) {
-        initAnimation(Direction.UP, c, startPosition, endPosition, ticks, delay);
+        initAnimation(Movement.Direction.UP, c, startPosition, endPosition, ticks, delay);
     }
 
     /**
@@ -128,7 +126,7 @@ public class Move {
      * @param delay         Retardo
      */
     public static void Down(Component c, int startPosition, int endPosition, int ticks, int delay) {
-        initAnimation(Direction.DOWN, c, startPosition, endPosition, ticks, delay);
+        initAnimation(Movement.Direction.DOWN, c, startPosition, endPosition, ticks, delay);
     }
 
     /**
@@ -176,7 +174,7 @@ public class Move {
      * @param delay         Retardo
      */
     public static void Right(Component c, int startPosition, int endPosition, int ticks, int delay) {
-        initAnimation(Direction.RIGHT, c, startPosition, endPosition, ticks, delay);
+        initAnimation(Movement.Direction.RIGHT, c, startPosition, endPosition, ticks, delay);
     }
 
     /**
@@ -224,7 +222,7 @@ public class Move {
      * @param delay         Retardo
      */
     public static void Left(Component c, int startPosition, int endPosition, int ticks, int delay) {
-        initAnimation(Direction.LEFT, c, startPosition, endPosition, ticks, delay);
+        initAnimation(Movement.Direction.LEFT, c, startPosition, endPosition, ticks, delay);
     }
 
     /**
