@@ -99,7 +99,6 @@
         <connection>scm:git:git://github.com/Kokecena/JovisAnimation.git</connection>
         <developerConnection>scm:git:ssh://github.com:Kokecena/JovisAnimation.git</developerConnection>
         <url>http://github.com/Kokecena/JovisAnimation</url>
-      <tag>JovisAnimation-1.0</tag>
   </scm>
 
     <developers>
