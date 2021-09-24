@@ -32,4 +32,4 @@ Efectos basicos para componentes Swing, cuenta con 2 clases estaticas:
 </dependency>
 ```
 
-Eso es todo y espero lo disfruten :)
+Eso es todo :+1:, espero lo disfruten :shipit: *-c va-*
