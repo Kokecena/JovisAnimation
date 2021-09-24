@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.github.Kokecena</groupId>
+    <groupId>io.github.kokecena</groupId>
     <artifactId>JovisAnimation</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
@@ -96,7 +96,7 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git://github.com/Kokecena/JovisAnimation.git</connection>
+        <connection>scm:git:git://git@github.com:Kokecena/JovisAnimation.git</connection>
         <developerConnection>scm:git:ssh://github.com:Kokecena/JovisAnimation.git</developerConnection>
         <url>http://github.com/Kokecena/JovisAnimation</url>
   </scm>
@@ -105,7 +105,7 @@
         <developer>
             <name>Jovanni Narciso Sanchez Hernandez</name>
             <email>jovnni.narciso@gmail.com</email>
-            <organization>io.github.Kokecena</organization>
+            <organization>io.github.kokecena</organization>
             <organizationUrl>https://github.com/Kokecena/</organizationUrl>
         </developer>
     </developers>
