@@ -31,5 +31,6 @@ Efectos basicos para componentes Swing, cuenta con 2 clases estaticas:
   <version>1.0.3</version>
 </dependency>
 ```
-
+### Archivo Jar
+Si no estas ocupando la tecnologia de maven aqui esta el [link](https://search.maven.org/remotecontent?filepath=io/github/kokecena/JovisAnimation/1.0.3/JovisAnimation-1.0.3.jar) directo al jar del proyecto, aun que en lo personal si recomendaria usar Maven te evitas estar como loco buscando librerias viejas (?) solo lo dejo como sugerencia
 Eso es todo :+1:, espero lo disfruten :shipit: *-c va-*
